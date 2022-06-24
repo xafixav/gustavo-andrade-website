@@ -2,6 +2,22 @@
   padding: 0 2rem;
 }
 
+.Header {
+  text-align: center;
+}
+
+.Header h4 {
+  margin: 2rem;
+  display: inline-block;
+}
+
+.Header *:hover,
+.Header *:focus,
+.Header *:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
