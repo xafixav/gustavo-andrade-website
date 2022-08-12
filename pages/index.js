@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Gustavo Xafixav</title>
-        <meta name="description" content="Gustavo Portifolios, be welcome" />
+        <meta name="description" content="Gustavo Portifolio, be welcome" />
         <link rel="icon" href="/tibia.jpg" />
       </Head>
 
