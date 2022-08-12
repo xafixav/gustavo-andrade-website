@@ -8,9 +8,9 @@ export function Header() {
       <h1>
         GUSTAVO ANDRADE
       </h1>
-      <p>
+      <div>
         {AnimatedDev()}
-      </p>
+      </div>
       <h4>
         <Link href='/'>
           <a>
