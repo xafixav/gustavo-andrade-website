@@ -12,6 +12,11 @@ async function readRaw(apiAdress) {
   return raw;
 }
 
+async function getRepository(repoName) {
+  const getReadme = await readRaw(`https://raw.githubusercontent.com/xafixav/${repoName}/main/README.md`);
+  return getReadme;
+}
+
 function catchString(rawContent) {
   const text = rawContent.match(/'(?=_)(.*)(?=_)'/gm)[0].replace('_', '');
   return text;
@@ -21,4 +26,5 @@ export {
   readRaw,
   catchString,
   getRepositories,
+  getRepository,
 };
