@@ -4,7 +4,6 @@ import { getRepositories, getRepository } from '../components/services/fetchAPI'
 import styles from '../styles/portifolio.module.css';
 
 
-
 export default function Portifolio() {
   const [repositories, setRepositories] = useState([]);
 
@@ -15,7 +14,7 @@ export default function Portifolio() {
   const consoleReadme = async (repoName) => {
     const readme = await getRepository(repoName);
     console.log(readme);
-  }
+  };
 
   const generateProjects = () => {    
     return repositories.map((project, index) => (
